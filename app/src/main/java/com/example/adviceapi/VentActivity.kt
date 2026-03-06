@@ -38,12 +38,13 @@ class VentActivity : AppCompatActivity() {
         }
 
         binding.ventSubmitButton.setOnClickListener {
-            val ventWords = binding.ventText.text.toString()
+           // val ventWords = binding.ventText.text.toString()
+            //val ventIntent = Intent(this, AdviceSlipActivity::class.java)
+
+            //ventIntent.putExtra(EXTRA_VENT, ventWords)
             val ventIntent = Intent(this, AdviceSlipActivity::class.java)
 
-            ventIntent.putExtra(EXTRA_VENT, ventWords)
-
-            startForResult.launch(ventIntent)
+            startActivity(ventIntent)
 
         }
 
