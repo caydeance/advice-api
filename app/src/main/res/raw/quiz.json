@@ -2,29 +2,29 @@
   {
     "question": "On a scale of 1-5, how was your day today?",
     "choices": {
-      "1": -2,
-      "2": -1,
+      "1": 4,
+      "2": 3,
       "3": 2,
       "4" : 1,
-      "5" : 5
+      "5" : 0
     }
   },
   {
-    "question": "",
+    "question": "If you saw a puppy, you would...",
     "choices": {
-      "Run away": -2,
-      "Ignore it": -1,
-      "Kick it": 2,
-      "Pet it" : 1,
-      "Carry it" : 5
+      "run away": 3,
+      "ignore it": 2,
+      "kick it": 4,
+      "pet it" : 0,
+      "carry it" : 1
     }
   },
   {
-    "question": "Small Talk?",
+    "question": "Small talk?",
     "choices": {
-      "Yes": -2,
-      "No": -1
-
+      "yes": 0,
+      "never": 2,
+      "if i have to": 1
     }
   },
 
