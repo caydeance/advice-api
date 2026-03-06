@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:visibility="invisible"
         app:constraint_referenced_ids="choice1,choice2,choice3,choice4,question"
-        tools:visibility="visible" />
+        tools:visibility="gone" />
 
     <Button
         android:id="@+id/choice3"
