@@ -51,4 +51,9 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    implementation("androidx.core:core-ktx:1.12.0")
+
+    // ADD THIS LINE:
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
 }
