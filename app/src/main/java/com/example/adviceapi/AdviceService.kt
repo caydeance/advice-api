@@ -5,5 +5,5 @@ import retrofit2.http.GET
 
 interface AdviceService {
     @GET("advice")
-    fun getAdvice() : Call<Advice>
+    fun getRandomAdvice(): Call<Advice>
 }
