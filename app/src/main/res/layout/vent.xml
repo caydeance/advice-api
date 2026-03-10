@@ -9,15 +9,23 @@
     <EditText
         android:id="@+id/vent_text"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
-        android:minWidth="250dp"
-        android:gravity="start|top"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal|top"
+        android:hint="vent to your heart's content"
         android:inputType="textMultiLine"
+        android:minWidth="250dp"
+        android:padding="16dp"
+        android:paddingBottom="40dp"
         android:scrollHorizontally="false"
+        android:scrollbars="vertical"
+        android:overScrollMode="always"
+        android:scrollbarStyle="insideOverlay"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/vent_submit_button" />
+        app:layout_constraintTop_toBottomOf="@+id/vent_submit_button"
+        tools:text="VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENTVENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENTVENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENTVENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENTVENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENTVENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENTVENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENTVENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENTVENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENTVENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENTVENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENTVENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT VENT" />
 
     <Button
         android:id="@+id/vent_submit_button"

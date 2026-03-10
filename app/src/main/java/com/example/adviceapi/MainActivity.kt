@@ -21,18 +21,20 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        
-        // Navigate to Quiz Page
+        /*
+        // go to Quiz Page
         binding.buttonMainQuiz.setOnClickListener {
             val intent = Intent(this, QuizActivity::class.java)
             startActivity(intent)
         }
 
-        // Navigate to Vent Page
+        // go to Vent Page
         binding.buttonMainVent.setOnClickListener {
             val intent = Intent(this, VentActivity::class.java)
             startActivity(intent)
         }
+        */
+
 
         val adviceService = RetrofitHelper.getInstance().create(AdviceService::class.java)
         val adviceCall = adviceService.getRandomAdvice()
