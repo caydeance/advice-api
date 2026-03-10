@@ -3,6 +3,7 @@ package com.example.adviceapi
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
+import android.view.inputmethod.InputBinding
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.ActivityResult
 import androidx.activity.result.contract.ActivityResultContracts.StartActivityForResult
@@ -16,14 +17,7 @@ class VentActivity : AppCompatActivity() {
         val EXTRA_VENT = "vent"
     }
 
-    val startForResult = registerForActivityResult(StartActivityForResult()) { result: ActivityResult ->
-        if (result.resultCode == Activity.RESULT_OK) {
-            val intent = result.data
-            // Handle the Intent to whatever we need with the return data
-            binding.ventText.setText(intent?.getStringExtra(EXTRA_VENT))
 
-        }
-    }
 
     private lateinit var binding: VentBinding
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,13 +32,15 @@ class VentActivity : AppCompatActivity() {
         }
 
         binding.ventSubmitButton.setOnClickListener {
-           // val ventWords = binding.ventText.text.toString()
-            //val ventIntent = Intent(this, AdviceSlipActivity::class.java)
+//            val ventWords = binding.ventText.text.toString()
+//            val ventIntent = Intent(this, AdviceSlipActivity::class.java)
+//
+//            ventIntent.putExtra(EXTRA_VENT, ventWords)
 
-            //ventIntent.putExtra(EXTRA_VENT, ventWords)
             val ventIntent = Intent(this, AdviceSlipActivity::class.java)
 
             startActivity(ventIntent)
+
 
         }
 
