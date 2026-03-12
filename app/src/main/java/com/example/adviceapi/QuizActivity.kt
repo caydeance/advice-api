@@ -18,7 +18,7 @@ import com.google.gson.reflect.TypeToken
 
 class QuizActivity : AppCompatActivity() {
     companion object{
-        val EXTRA_QUIZ = "quiz"
+        val EXTRA_RESULT_QUERY = "query"
     }
 
     private lateinit var binding: ActivityQuizBinding
@@ -88,8 +88,11 @@ class QuizActivity : AppCompatActivity() {
 
         fun getNextQuestion(){
             if(quiz.moreQuestions()== false){
+
+                var total = quiz.points
                 val quizIntent = Intent(this, AdviceSlipListActivity::class.java)
 
+                intent.putExtra(EXTRA_RESULT_QUERY, total)
                 startActivity(quizIntent)
             }
             else{
