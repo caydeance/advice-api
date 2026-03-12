@@ -11,7 +11,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.Group
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.adviceapi.databinding.QuizBinding
+import com.example.adviceapi.databinding.ActivityMainBinding
+import com.example.adviceapi.databinding.ActivityQuizBinding
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 
@@ -21,7 +22,7 @@ class QuizActivity : AppCompatActivity() {
         val EXTRA_QUIZ = "quiz"
     }
 
-    private lateinit var binding: QuizBinding
+    private lateinit var binding: ActivityQuizBinding
 
     private lateinit var choice1 : Button
     private lateinit var choice2 : Button
@@ -44,7 +45,8 @@ class QuizActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.quiz)
+        binding = ActivityQuizBinding.inflate(layoutInflater)
+        setContentView(binding.root)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.quiz_layout)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -78,7 +80,7 @@ class QuizActivity : AppCompatActivity() {
 
         fun getNextQuestion(){
             if(quiz.moreQuestions()== false){
-                val quizIntent = Intent(this, AdviceSlipActivity::class.java)
+                val quizIntent = Intent(this, AdviceSlipListActivity::class.java)
 
                 startActivity(quizIntent)
             }
