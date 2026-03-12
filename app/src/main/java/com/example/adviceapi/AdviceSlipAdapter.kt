@@ -1,6 +1,7 @@
 package com.example.adviceapi
 
 import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,9 +12,9 @@ import androidx.recyclerview.widget.RecyclerView
 
 class AdviceSlipAdapter (var adviceSlipList: List<Slip>) :
     RecyclerView.Adapter<AdviceSlipAdapter.ViewHolder>() {
-    companion object {
-        val EXTRA_ADVICE = "advice"
-    }
+//    companion object {
+//        val EXTRA_ADVICE = "advice"
+//    }
 
     private var adviceSlipCount : Int = 0
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
@@ -36,12 +37,9 @@ class AdviceSlipAdapter (var adviceSlipList: List<Slip>) :
 
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
         val adviceSlip = adviceSlipList[position]
-
-        viewHolder.textViewId.text = adviceSlip.advice
-        viewHolder.textViewId.text = adviceSlip.id.toString()
-
-
-
+        Log.d("adapter", "onBindViewHolder: $adviceSlip")
+        viewHolder.textViewQuote.text = adviceSlip.advice
+        viewHolder.textViewId.text = "#" + adviceSlip.id.toString()
     }
 
     override fun getItemCount() = adviceSlipList.size

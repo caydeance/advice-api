@@ -12,7 +12,7 @@ import android.text.TextWatcher
 
 class VentActivity : AppCompatActivity() {
     companion object{
-        val EXTRA_VENT = "activity_vent"
+        val EXTRA_VENT_TEXTLEN = "activity_vent"
     }
 
 
@@ -38,7 +38,7 @@ class VentActivity : AppCompatActivity() {
             val ventIntent = Intent(this, AdviceSlipListActivity::class.java)
             val finalText = binding.textViewVentActivityText.text.toString().length
 
-            intent.putExtra(EXTRA_VENT, finalText)
+            intent.putExtra(EXTRA_VENT_TEXTLEN, finalText)
 
             startActivity(ventIntent)
 

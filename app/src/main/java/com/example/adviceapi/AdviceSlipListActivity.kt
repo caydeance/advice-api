@@ -20,6 +20,7 @@ import kotlinx.coroutines.awaitAll
 class AdviceSlipListActivity : AppCompatActivity() {
     private lateinit var binding: ActivityAdviceListBinding
     private lateinit var adapter: AdviceSlipAdapter
+    private var query: String = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,10 +32,30 @@ class AdviceSlipListActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        val quizResultQuery = intent.getStringExtra("QUIZ_RESULT_QUERY") ?: "life"
-        val adviceService = RetrofitHelper.getInstance().create(AdviceService::class.java)
-        val adviceCall = adviceService.searchAdvice(quizResultQuery)
 
+
+        val quizScore = intent.getStringExtra(QuizActivity.EXTRA_QUIZ_SCORE)?.toInt() ?: 0
+        val ventTextLen = intent.getStringExtra(VentActivity.EXTRA_VENT_TEXTLEN)?.toInt() ?: 0
+
+        when {
+            quizScore >= 31 -> query = "a"
+            quizScore in 23..30 -> query = "e"
+            quizScore in 16..22 -> query = "i"
+            quizScore in 9..15 -> query = "o"
+            quizScore in 0..8 -> query = "u"
+        }
+
+        when {
+            ventTextLen > 2000 -> query = "a"
+            ventTextLen in 1600..2000 -> query = "e"
+            ventTextLen in 1200..1599 -> query = "i"
+            ventTextLen in 800..1999 -> query = "o"
+            ventTextLen in 0..799 -> query = "u"
+        }
+
+
+        val adviceService = RetrofitHelper.getInstance().create(AdviceService::class.java)
+        val adviceCall = adviceService.searchAdvice(query)
 
         adviceCall.enqueue(object : Callback<AdviceCollection> {
             override fun onResponse(
@@ -45,6 +66,7 @@ class AdviceSlipListActivity : AppCompatActivity() {
                 val randomThreeSlips = slipList?.shuffled()?.take(3) ?: emptyList()
                 val recyclerView: RecyclerView = findViewById(R.id.recyclerView_adviceSlipList)
                 recyclerView.layoutManager = LinearLayoutManager(this@AdviceSlipListActivity)
+
 
                 adapter = AdviceSlipAdapter(randomThreeSlips)
                 recyclerView.adapter = adapter
