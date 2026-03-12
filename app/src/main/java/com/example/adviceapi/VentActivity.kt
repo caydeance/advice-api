@@ -10,20 +10,20 @@ import androidx.activity.result.contract.ActivityResultContracts.StartActivityFo
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.adviceapi.databinding.VentBinding
+import com.example.adviceapi.databinding.ActivityVentBinding
 
 class VentActivity : AppCompatActivity() {
     companion object{
-        val EXTRA_VENT = "vent"
+        val EXTRA_VENT = "activity_vent"
     }
 
 
 
-    private lateinit var binding: VentBinding
+    private lateinit var binding: ActivityVentBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        binding = VentBinding.inflate(layoutInflater)
+        binding = ActivityVentBinding.inflate(layoutInflater)
         setContentView(binding.root)
         ViewCompat.setOnApplyWindowInsetsListener(binding.ventLayout) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
