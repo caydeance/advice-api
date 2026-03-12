@@ -9,13 +9,15 @@
 
     <Button
         android:id="@+id/button_main_vent"
-        android:fontWeight="500"
-        android:fontFamily="@font/outfit"
         style="@style/Widget.AppCompat.Button"
         android:layout_width="0dp"
         android:layout_height="364dp"
+        android:backgroundTint="#F0A4DD"
+        android:fontFamily="@font/outfit"
+        android:fontWeight="500"
         android:text="@string/vent"
         android:textSize="30sp"
+
         app:layout_constraintBottom_toTopOf="@+id/button_main_quiz"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,13 +25,16 @@
 
     <Button
         android:id="@+id/button_main_quiz"
-        android:fontWeight="1000"
-        android:fontFamily="@font/montserrat"
         style="@style/Widget.AppCompat.Button"
+
         android:layout_width="0dp"
         android:layout_height="364dp"
+        android:backgroundTint="#311717"
+        android:fontFamily="@font/montserrat"
+        android:fontWeight="1000"
         android:text="@string/quiz"
         android:textSize="50sp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

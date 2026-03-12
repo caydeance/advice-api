@@ -11,9 +11,9 @@ import com.example.adviceapi.databinding.ActivityVentBinding
 import android.text.TextWatcher
 
 class VentActivity : AppCompatActivity() {
-//    companion object{
-//        val EXTRA_VENT = "activity_vent"
-//    }
+    companion object{
+        val EXTRA_VENT = "activity_vent"
+    }
 
 
 
@@ -36,6 +36,9 @@ class VentActivity : AppCompatActivity() {
 //            ventIntent.putExtra(EXTRA_VENT, ventWords)
 
             val ventIntent = Intent(this, AdviceSlipListActivity::class.java)
+            val finalText = binding.textViewVentActivityText.text.toString().length
+
+            intent.putExtra(EXTRA_VENT, finalText)
 
             startActivity(ventIntent)
 
