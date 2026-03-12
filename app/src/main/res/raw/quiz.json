@@ -12,11 +12,11 @@
   {
     "question": "Majority of the day, you felt...",
     "choices": {
-      "bored :/": -2,
-      "supercalifragilisticexpialidocious!": -1,
-      "mad": 2,
-      "sad" : 1,
-      "content :]" : 5
+      "bored :/": 2,
+      "supercalifragilisticexpialidocious!": 0,
+      "mad": 4,
+      "sad" : 3,
+      "content :]" : 1
     }
   },
   {
@@ -112,13 +112,12 @@
   {
     "question": "If you didn't have to work anymore, how would you fill your time?",
     "choices": {
-      "hm, i genuinely don't know": -2,
-      "sneezed": -1,
-      "had a runny nose": 2,
-      "were completely healthy" : 1
+      "hm, i genuinely don't know": 3,
+      "i would go traveling!": 0,
+      "we tryin' out new hobbies :))": 0,
+      "i'm just gonna study for fun (i'm too locked in now)" : 0
     }
   },
-
   {
     "question": "You read books",
     "choices": {
