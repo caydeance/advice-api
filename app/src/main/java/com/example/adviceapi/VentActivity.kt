@@ -1,21 +1,17 @@
 package com.example.adviceapi
 
-import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
-import android.view.inputmethod.InputBinding
 import androidx.activity.enableEdgeToEdge
-import androidx.activity.result.ActivityResult
-import androidx.activity.result.contract.ActivityResultContracts.StartActivityForResult
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.adviceapi.databinding.ActivityVentBinding
 
 class VentActivity : AppCompatActivity() {
-    companion object{
-        val EXTRA_VENT = "activity_vent"
-    }
+//    companion object{
+//        val EXTRA_VENT = "activity_vent"
+//    }
 
 
 
@@ -37,7 +33,7 @@ class VentActivity : AppCompatActivity() {
 //
 //            ventIntent.putExtra(EXTRA_VENT, ventWords)
 
-            val ventIntent = Intent(this, AdviceSlipActivity::class.java)
+            val ventIntent = Intent(this, AdviceSlipListActivity::class.java)
 
             startActivity(ventIntent)
 

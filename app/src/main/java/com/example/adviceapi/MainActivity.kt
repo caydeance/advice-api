@@ -36,8 +36,8 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        val adviceService = RetrofitHelper.getInstance().create(AdviceService::class.java)
-        val adviceCall = adviceService.getRandomAdvice()
+//        val adviceService = RetrofitHelper.getInstance().create(AdviceService::class.java)
+//        val adviceCall = adviceService.searchAdvice()
     }
 
 
