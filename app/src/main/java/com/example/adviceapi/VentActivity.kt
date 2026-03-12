@@ -51,7 +51,7 @@ class VentActivity : AppCompatActivity() {
 
             override fun afterTextChanged(s: Editable?) {
                 val textLength = s?.length ?: 0
-                val maxChars = 500 // The character count at which water is "empty"
+                val maxChars = 2510 // The character count at which water is "empty"
 
                 // Calculate the new height percentage (draining effect)
                 val factor = (maxChars - textLength).coerceAtLeast(0).toFloat() / maxChars
