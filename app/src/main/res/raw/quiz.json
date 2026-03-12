@@ -119,7 +119,7 @@
     }
   },
   {
-    "question": "You read books",
+    "question": "You read books...",
     "choices": {
       "when you’re assigned to": 1,
       "'occasionally'": 2,
