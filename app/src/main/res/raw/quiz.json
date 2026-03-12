@@ -1,107 +1,146 @@
 [
   {
-    "question": "On a scale of 1-5, how was your day today?",
+    "question": "Sup! On a scale of 1-5, how would you rate your day today?",
     "choices": {
-      "1": -2,
-      "2": -1,
+      "1": 4,
+      "2": 3,
       "3": 2,
       "4" : 1,
-      "5": 5
+      "5" : 0
     }
   },
   {
-    "question": "",
+    "question": "Majority of the day, you felt...",
     "choices": {
-      "Run away": -2,
-      "Ignore it": -1,
-      "Kick it": 2,
-      "Pet it" : 1,
-      "Carry it" : 5
+      "bored :/": 2,
+      "supercalifragilisticexpialidocious!": 0,
+      "mad": 4,
+      "sad" : 3,
+      "content :]" : 1
     }
   },
   {
-    "question": "Small Talk?",
+    "question": "Did you look at the sky today?",
     "choices": {
-      "Yes": -2,
-      "No": -1
-
-    }
-  },
-
-  {
-    "question": "What caused you distress today",
-    "choices": {
-      "School": -2,
-      "People": -1,
-      "Nothing": 2,
-      "Work" : 1,
-      "Everything" : 5
+      "yes :3": 0,
+      "oh noes, i just realized i haven't for a low time": 2,
+      "no, but i did yesterday!": 1
     }
   },
   {
-    "question": "If someone you didn’t like came up to you, you would…",
+    "question": "Thinking through your week so far, you had...",
     "choices": {
-      "Punch them (in your head)\n": -2,
-      "Ignore them": -1,
-      "Yell at them": 2,
-      "None of the above" : 1
+      "more highs than lows :)": 0,
+      "more lows than highs :(": 4,
+      "the same amount of highs and lows :]": 2,
+      "no highs or lows uwu": 4
     }
   },
-
   {
-    "question": "You ___ your friends",
+    "question": "Can a match box?",
     "choices": {
-      "Love": -2,
-      "Like": -1,
-      "Tolerate": 2
+      "only a tin can": 0,
+      "no, but a bun can dance": 0,
+      "huh???": 0
+    }
+  },
+  {
+    "question": "How has small talk been goin'?",
+    "choices": {
+      "it made be embrace my inner introverted soul (i hate small talk)": 2,
+      "eh, i do it when i have to": 1,
+      "small talk keeps my life exciting": 0
     }
   },
 
   {
-    "question": "Majority of the day, you felt",
+    "question": "Anything that caused you distress today?",
     "choices": {
-      "Bored": -2,
-      "Happy": -1,
-      "Mad": 2,
-      "Sad" : 1,
-      "Content" : 5
+      "school": 1,
+      "people": 2,
+      "nothing!": 0,
+      "work" : 3,
+      "sadly, everything" : 4
+    }
+  },
+  {
+    "question": "What do you think about the state of humanity?",
+    "choices": {
+      "its bad": 1,
+      "there is still hope": 0
+    }
+  },
+  {
+    "question": "Be honest!! How many hours of sleep did you get last night? :)",
+    "choices": {
+      "0": 3,
+      "1-5": 2,
+      "like 6 or 7": 1,
+      "8+ hours!!!" : 0
     }
   },
 
   {
-    "question": "Milk spills",
+    "question": "You would describe your friends as...",
     "choices": {
-      "Cry about it": -2,
-      "Clean it up": -1,
-      "Leave it": 2
+      "few in number, but strong in heart": 0,
+      "a large group, where everyone kinda knows each other": 1,
+      "closer to acquaintances": 2
     }
   },
 
   {
-    "question": "The weather was",
+    "question": "If milk spilled (literally or figuratively), your first reaction would be...",
     "choices": {
-      "Cloudy": -2,
-      "Rainy": -1,
-      "Sunny": 2
+      "sadness": 1,
+      "acceptance/optimism": 0,
+      "anger": 2
     }
   },
 
   {
-    "question": "Today you",
+    "question": "The weather yesterday was...",
     "choices": {
-      "Coughed": -2,
-      "Sneezed": -1,
-      "Had a runny nose": 2,
-      "Were completely healthy" : 1
+      "cloudy": 0,
+      "rainy": 0,
+      "sunny": 0,
+      "windy": 0,
+      "i don't remember": 2
     }
   },
 
   {
-    "question": "You read books",
+    "question": "If you didn't have to work anymore, how would you fill your time?",
     "choices": {
-      "When you’re assigned to": -2,
-      "When you want to": -1,
-      "Every day": 2
+      "hm, i genuinely don't know": 3,
+      "i would go traveling!": 0,
+      "we tryin' out new hobbies :))": 0,
+      "i'm just gonna study for fun (i'm too locked in now)" : 0
+    }
+  },
+  {
+    "question": "You read books...",
+    "choices": {
+      "when you’re assigned to": 1,
+      "'occasionally'": 2,
+      "every day": 0
+    }
+  },
+  {
+    "question": "Today you...",
+    "choices": {
+      "coughed": 1,
+      "sneezed": 2,
+      "had a runny nose": 3,
+      "all of the above": 4,
+      "were completely healthy": 0
+    }
+  },
+  {
+    "question:": "Last question! Do YOU know what a sacabambaspis is??",
+    "choices": {
+      "YeEeEeeEEss": 0,
+      "nooooooooooooooooooo": 0
     }
   }
 
